@@ -1,20 +1,27 @@
-<?php
-require_once 'class/Moto.php';
-require_once 'class/Auto.php';
-
-$moto1 = new Moto(false, 2, "Suzuki"); // Crear un objeto moto
-$moto1->arrancar();
-$moto1->encenderMotor();
-$moto1->arrancar();
-/********************************************************** */
-$cantRuedas = 4;
-$motorEncendido = true;
-$cantPuertas = 2;
-$marca = 'Mini Cooper';
-echo "<hr>";
-$auto1 = new Auto($cantPuertas,$motorEncendido,$cantRuedas,$marca);
-$auto1->arrancar();
-$auto1->apagarMotor();
-$auto1->arrancar();
-echo "<br>Cantidad puertas: ".$auto1->getCantidadPuertas();
-echo "<br>Marca: ".$auto1->getMarca();
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informacion vehiculo</title>
+    <link rel="stylesheet" href="css/index1.css">
+</head>
+<body>
+    <div class="info-container">
+        <?php
+        $tipoVehiculo = $_POST['txtVehiculo'] ?? null;
+        $marca = $_POST['txtMarca'] ?? null;
+        $cantRuedas = $_POST['txtCantR'] ?? null;
+        $cantPuertas = $_POST['CantP']!=null && $_POST['CantP'] != "" ? $_POST['CantP'] : "La moto no tiene puertas.";
+        $encendido = $_POST['estadoEncendido'] ?? null;
+        $output = <<<OUT
+        <label><h4>Tipo Vehiculo:</h4> $tipoVehiculo</label>
+        <label><h4>Marca del Vehiculo:</h4> $marca</label>
+        <label><h4>Cantidad Ruedas:</h4> $cantRuedas</label>
+        <label><h4>Cantidad Puertas:</h4> $cantPuertas</label>
+        <label><h4>¿Esta Encendido?:</h4> $encendido</label>
+        OUT;
+        echo $output;
+        ?>
+    </div>
+</body>
+</html>

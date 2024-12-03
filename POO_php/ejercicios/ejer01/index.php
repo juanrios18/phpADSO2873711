@@ -8,36 +8,36 @@
 </head>
 <body>
 <div class="form-container">
-        <form action="procesardatos.php" method="post">
-            <h2>Datos Empleado</h2>
-            <div class="form-group">
-                <label for="txtNombre">Ingrese su nombre</label>
-                <input type="text" name="txtNombre" id="txtNombre">
-            </div>
-            <div class="form-group">
-                <label for="txtfechaNac">Ingrese su fecha de nacimiento</label>
-                <input type="date" name="txtfechaNac" id="txtfechaNac">
-            </div>
-            <div class="form-group">
-                <label for="txtEmail">Ingrese su email</label>
-                <input type="email" name="txtEmail" id="txtEmail">
-            </div>
-            <div class="form-group">
-                <label for="txtSueldo">Ingrese su sueldo</label>
-                <input type="number" name="txtSueldo" id="txtSueldo">
-            </div>
-            <div class="form-group">
-                <label for="txtPeso">Ingrese su peso</label>
-                <input type="number" name="txtPeso" id="txtPeso">
-            </div>
-            <div class="form-group">
-                <label for="txtAltura">Ingrese su altura</label>
-                <input type="text" name="txtAltura" id="txtAltura">
-            </div>
-            <div class="form-group">
-                <button type="submit">Registrar</button>
-            </div>
-        </form>
-    </div>
+    <form action="procesardatos.php" method="post">
+        <h2>Datos Empleado</h2>
+        <div class="form-group">
+            <label for="txtNombre">Ingrese su nombre:</label>
+            <input type="text" name="txtNombre" id="txtNombre" required>
+        </div>
+        <div class="form-group">
+            <label for="txtfechaNac">Ingrese su fecha de nacimiento:</label>
+            <input type="date" name="txtfechaNac" id="txtfechaNac" required>
+        </div>
+        <div class="form-group">
+            <label for="txtEmail">Ingrese su email:</label>
+            <input type="email" name="txtEmail" id="txtEmail" required>
+        </div>
+        <div class="form-group">
+            <label for="txtSueldo">Ingrese su sueldo:</label>
+            <input type="number" name="txtSueldo" id="txtSueldo" required>
+        </div>
+        <div class="form-group">
+            <label for="txtPeso">Ingrese su peso:</label>
+            <input type="number" name="txtPeso" id="txtPeso" required>
+        </div>
+        <div class="form-group">
+            <label for="txtAltura">Ingrese su altura:</label>
+            <input type="text" name="txtAltura" id="txtAltura" required>
+        </div>
+        <div class="form-group">
+            <button type="submit">Registrar</button>
+        </div>
+    </form>
+</div>
 </body>
 </html>

@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accion</title>
     <link rel="stylesheet" href="css/formTransacciones.css">
 </head>
+
 <body>
     <div class="main-buttons">
         <button onclick="location.href='cuentacrear.php'">Crear Cuenta</button>
@@ -45,7 +47,7 @@
             const transaccion = document.getElementById("transaccion").value;
             const campoTipoTransaccion = document.getElementById("campoTipoTransaccion");
 
-            if(transaccion === 'transferir') {accion
+            if (transaccion === 'transferir') {
                 campoTipoTransaccion.style.display = "block";
             } else {
                 campoTipoTransaccion.style.display = "none";

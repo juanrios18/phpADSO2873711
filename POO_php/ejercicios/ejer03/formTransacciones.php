@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accion</title>
+    <link rel="stylesheet" href="css/formTransacciones.css">
 </head>
 <body>
     <div class="main-buttons">
-        <button onclick="location.href='crearCuenta.php'">Crear Cuenta</button>
-        <button onclick="location.href='acciones.php'">Realizar Acción</button>
-        <button onclick="location.href='verDatos.php'">Visualizar Cuentas</button>
+        <button onclick="location.href='cuentacrear.php'">Crear Cuenta</button>
+        <button onclick="location.href='verDatos.php'">Ver Cuentas</button>
+        <button onclick="location.href='verEmpleados.php'">Ver Empleados</button>
         <button onclick="location.href='index.php'">Crear Empleado</button>
-        <button onclick="location.href='verEmpleados.php'">Visualizar Empleados</button>
     </div>
 
-    <h2>Accion a realizar!!!</h2>
-    <form action="acciones.php" method="POST">
+    <form action="transacciones.php" method="POST">
+        <h2>Transacción a realizar!!!</h2>
         <label for="numeroCuenta">Ingrese el Número de Cuenta:</label>
         <input type="text" name="numeroCuenta" required><br>
 
@@ -36,7 +36,9 @@
             <input type="text" name="numeroCuentaDestino" class="optional"><br>
         </div>
 
-        <input type="submit" value="Procesar Transacción">
+        <div class="form-group">
+            <input type="submit" value="Procesar Transacción">
+        </div>
     </form>
     <script>
         function mostrarOcultarCampos() {

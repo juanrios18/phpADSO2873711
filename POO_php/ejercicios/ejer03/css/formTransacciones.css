@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.main-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 200px;
+}
+
+.main-buttons button {
+    background-color: white;
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.main-buttons button:hover {
+    background-color: #00ff9d;
+    border:2px solid #057e01;
+}
+
+form {
+    background-color: rgb(220, 252, 231);
+    border: 3px solid #057e01;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 12px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 300px;
+}
+
+.form-group {
+    text-align: center;
+}
+
+form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 3px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #a8d4a6;
+}
+
+form input[type="submit"] {
+    background-color: #00ff9d;
+    color: rgb(0, 0, 0);
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    width: 70%;
+}
+
+.optional {
+    display: none;
+}

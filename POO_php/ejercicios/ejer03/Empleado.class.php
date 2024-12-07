@@ -8,7 +8,7 @@ class Empleado {
     private $peso;
     private $altura;
 
-    public function __construct($nombre = null, $sueldo = null, $email = null, $fechaNacimiento = null, $peso = null, $altura = null) {
+    public function __construct($nombre, $sueldo, $email, $fechaNacimiento, $peso, $altura) {
         $this->nombre = $nombre;
         $this->sueldo = $sueldo;
         $this->email = $email;
@@ -19,9 +19,9 @@ class Empleado {
 
     public function imprimir() {
         if ($this->debePagarImpuestos($this->sueldo)) {
-            echo "Debe pagar Impuestos.<br>";
+            echo "Debe pagar Impuestos.";
         } else {
-            echo "No debe pagar impuestos.<br>";
+            echo "No debe pagar impuestos.  ";
         }
         $this->mostrarEdadYVotacion();
     }
@@ -32,11 +32,11 @@ class Empleado {
 
     private function mostrarEdadYVotacion() {
         $edad = $this->calcularEdad();
-        echo "Edad: $edad años. <br>";
+        echo "<hr>Edad: $edad años.";
         if ($edad >= 18) {
-            echo "Puede votar.<br>";
+            echo "<hr>Puede votar.";
         } else {
-            echo "No puede votar. <br>";
+            echo "<hr>No puede votar.";
         }
     }
 

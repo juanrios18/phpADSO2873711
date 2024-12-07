@@ -47,7 +47,7 @@ class Cuenta {
     }
 
     public function __toString() {
-        return "La cuenta es: {$this->numeroCuenta}, el nombre del titular es: {$this->nombreTitular}, su saldo es de: {$this->saldo} pesos y el tipo de cuenta es: {$this->tipoCuenta}.";
+        return "Cuenta: {$this->numeroCuenta} | Titular: {$this->nombreTitular} | Saldo: {$this->saldo} pesos | Tipo de Cuenta: {$this->tipoCuenta}.";
     }
 
     public function getNumeroCuenta() {
@@ -65,6 +65,5 @@ class Cuenta {
     public function getTipoCuenta() {
         return $this->tipoCuenta;
     }
-
-
 }
+?>

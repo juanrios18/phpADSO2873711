@@ -1,7 +1,7 @@
 <?php
-require_once "Cuenta.class.php";
+require_once "cuenta.php";
 
-if ($_SESSION['REQUEST_METHOD'] === 'POST' && isset($_POST['tipoTransaccion'])) {
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['tipoTransaccion'])) {
     $tipotransaccion = $_POST['tipoTransaccion'];
     $numeroCuenta = $_POST['numeroCuenta'];
 
@@ -67,3 +67,4 @@ if ($_SESSION['REQUEST_METHOD'] === 'POST' && isset($_POST['tipoTransaccion'])) 
 } else {
     echo "No se recibieron datos validos.";
 }
+?>
